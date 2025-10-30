@@ -8,6 +8,10 @@
 ## User settings
 xcuserdata/
 
+## OMC
+Frameworks/
+OMCApplet
+
 ## Obj-C/Swift specific
 *.hmap
 
