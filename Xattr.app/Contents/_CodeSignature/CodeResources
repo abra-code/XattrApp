@@ -40,6 +40,10 @@
 		<data>
 		55e8TjHkh/yKRD0vS6IuiWR2gPo=
 		</data>
+		<key>Resources/Credits.rtf</key>
+		<data>
+		WLiGDg8xmIyfIK6eDSVEs/UMJSA=
+		</data>
 		<key>Resources/Scripts/add.dialog.init.sh</key>
 		<data>
 		xswYdmVyDabXDONhIHaZLfcne5Y=
@@ -86,7 +90,7 @@
 		</data>
 		<key>Resources/Scripts/xattr.view.sh</key>
 		<data>
-		L4W/1HAgaOS/8QePydeVKVn1M1Y=
+		wQcVrwMnlPz+hQ6vRC1BG6+RBIU=
 		</data>
 		<key>Resources/Xattr.icns</key>
 		<data>
@@ -101,10 +105,6 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>Resources/getxattr</key>
-		<data>
-		p45RPQORT48YCi7Ua829WBl5U6M=
-		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -112,10 +112,19 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			nggby9R2Co4D1wpPh1b5+2UL148=
+			kaAwSuuEu8c7hNv19yyaGzxId9A=
 			</data>
 			<key>requirement</key>
-			<string>cdhash H"9e081bcbd4760a8e03d70a4f8756f9fb650bd78f" or cdhash H"95104288a4a28ab9ff4984d874c789f1de8538b2"</string>
+			<string>identifier "com.abracode.Xattr" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = T9NM2ZLDTY</string>
+		</dict>
+		<key>MacOS/getxattr</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			ymy5ERvnfzubxkykxvUUClOaZks=
+			</data>
+			<key>requirement</key>
+			<string>identifier "com.abracode.Xattr" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = T9NM2ZLDTY</string>
 		</dict>
 		<key>Resources/Assets.car</key>
 		<dict>
@@ -178,6 +187,13 @@
 			<key>hash2</key>
 			<data>
 			5/b+1dRx0KYpj21NtcuNWDW2DIEbIrVKFP9EyzV2jYM=
+			</data>
+		</dict>
+		<key>Resources/Credits.rtf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			iRgN9Opiz+NCDNta/U8gI8T6fvN3QI8QNeAKg4COkC0=
 			</data>
 		</dict>
 		<key>Resources/Scripts/add.dialog.init.sh</key>
@@ -261,7 +277,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			NgmA8XGxMmno+MlGPfgQC3phdSFZiYPtg3jBxVQFRi4=
+			FK08r4InAg7rOtK9Q6S8Ao8GEDjXbjYhSxpxEACnj/g=
 			</data>
 		</dict>
 		<key>Resources/Xattr.icns</key>
@@ -279,13 +295,6 @@
 			</data>
 			<key>optional</key>
 			<true/>
-		</dict>
-		<key>Resources/getxattr</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			dV6TqyTtXr5jA44Qemri4Zgy572Ikspd3snDW3brDCo=
-			</data>
 		</dict>
 	</dict>
 	<key>rules</key>

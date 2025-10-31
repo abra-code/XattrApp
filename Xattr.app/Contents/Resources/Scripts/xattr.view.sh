@@ -6,7 +6,7 @@ source "$OMC_APP_BUNDLE_PATH/Contents/Resources/Scripts/xattr.library.sh"
 
 # echo "[$(/usr/bin/basename "$0")]"
 
-getxattr="$OMC_APP_BUNDLE_PATH/Contents/Resources/getxattr"
+getxattr="$OMC_APP_BUNDLE_PATH/Contents/MacOS/getxattr"
 # echo "getxattr: $getxattr"
 
 echo ""
