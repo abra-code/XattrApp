@@ -18,7 +18,7 @@
 			<key>COMMAND_ID</key>
 			<string>xattr.new</string>
 			<key>EXECUTION_MODE</key>
-			<string>exe_popen</string>
+			<string>exe_shell_script</string>
 			<key>NAME</key>
 			<string>Xattr</string>
 			<key>NIB_DIALOG</key>
@@ -40,10 +40,6 @@
 			<string>Xattr</string>
 		</dict>
 		<dict>
-			<key>COMMAND</key>
-			<array>
-				<string>#using $OMC_DLG_CHOOSE_OBJECT_PATH</string>
-			</array>
 			<key>CHOOSE_OBJECT_DIALOG</key>
 			<dict>
 				<key>MESSAGE</key>
@@ -129,8 +125,11 @@
 				<key>NIB_NAME</key>
 				<string>AddAttribute</string>
 			</dict>
-			<key>VERSION</key>
-			<integer>1</integer>
+			<key>ENVIRONMENT_VARIABLES</key>
+			<dict>
+				<key>OMC_OBJ_PATH</key>
+				<string></string>
+			</dict>
 		</dict>
 		<dict>
 			<key>COMMAND_ID</key>
@@ -139,6 +138,34 @@
 			<string>exe_script_file</string>
 			<key>NAME</key>
 			<string>Add Attribute</string>
+		</dict>
+		<dict>
+			<key>NAME</key>
+			<string>Clear All Quarantine Attributes</string>
+			<key>ACTIVATION_MODE</key>
+			<string>act_file_or_folder</string>
+			<key>NEXT_COMMAND_ID</key>
+			<string>clear.quarantine</string>
+			<key>ENVIRONMENT_VARIABLES</key>
+			<dict>
+				<key>OMC_OBJ_PATH</key>
+				<string></string>
+			</dict>
+		</dict>
+		<dict>
+			<key>NAME</key>
+			<string>Clear All Quarantine Attributes</string>
+			<key>COMMAND_ID</key>
+			<string>clear.quarantine</string>
+  			<key>EXECUTION_MODE</key>
+			<string>exe_script_file</string>
+			<key>END_NOTIFICATION</key>
+			<dict>
+				<key>TITLE</key>
+				<string>XAttr</string>
+				<key>MESSAGE</key>
+				<string>Cleared all quarantine attributes!</string>
+			</dict>
 		</dict>
 	</array>
 	<key>VERSION</key>

@@ -7,6 +7,11 @@ source "$OMC_APP_BUNDLE_PATH/Contents/Resources/Scripts/xattr.library.sh"
 
 # get values from hidden controls passed from parent dialog
 XATTR_OBJECT_PATH="$OMC_NIB_DIALOG_CONTROL_3_VALUE"
+if [ -z "${XATTR_OBJECT_PATH}" ]; then
+	# try exported OMC_OBJ_PATH
+	XATTR_OBJECT_PATH="${OMC_OBJ_PATH}"
+fi
+
 XATTR_PARENT_DIALOG_GUID="$OMC_NIB_DIALOG_CONTROL_4_VALUE"
 echo "XATTR_PARENT_DIALOG_GUID: ${XATTR_PARENT_DIALOG_GUID}"
 
@@ -15,5 +20,7 @@ attribute_value="$OMC_NIB_DIALOG_CONTROL_2_VALUE"
 
 /usr/bin/xattr -w "${attribute_name}" "${attribute_value}" "${XATTR_OBJECT_PATH}"
 
-"$dialog" "$XATTR_PARENT_DIALOG_GUID" 1 omc_table_remove_all_rows
-load_attribute_table "$XATTR_PARENT_DIALOG_GUID" "${XATTR_OBJECT_PATH}"
+if [ -n "${XATTR_PARENT_DIALOG_GUID}" ]; then
+   "$dialog" "$XATTR_PARENT_DIALOG_GUID" 1 omc_table_remove_all_rows
+   load_attribute_table "$XATTR_PARENT_DIALOG_GUID" "${XATTR_OBJECT_PATH}"
+fi

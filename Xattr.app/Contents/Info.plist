@@ -51,7 +51,7 @@
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>1.0</string>
+	<string>1.1</string>
 	<key>LSMinimumSystemVersion</key>
 	<string>11.0</string>
 	<key>NSMainNibFile</key>
@@ -80,6 +80,27 @@
 			</array>
 			<key>NSUserData</key>
 			<string>Xattr</string>
+		</dict>
+		<dict>
+			<key>NSMenuItem</key>
+			<dict>
+				<key>default</key>
+				<string>Clear All Quarantine Attributes</string>
+			</dict>
+			<key>NSMessage</key>
+			<string>runOMCService</string>
+			<key>NSPortName</key>
+			<string>OMCService</string>
+			<key>NSRequiredContext</key>
+			<dict/>
+			<key>NSReturnTypes</key>
+			<array/>
+			<key>NSSendTypes</key>
+			<array>
+				<string>NSFilenamesPboardType</string>
+			</array>
+			<key>NSUserData</key>
+			<string>clear.quarantine</string>
 		</dict>
 	</array>
 </dict>
