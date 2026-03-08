@@ -10,7 +10,11 @@ xcuserdata/
 
 ## OMC
 Frameworks/
+MacOS/
+Xattr.app/Contents/MacOS/getxattr
 OMCApplet
+_CodeSignature/
+Xattr.app/Contents/_CodeSignature/CodeResources
 
 ## Obj-C/Swift specific
 *.hmap
@@ -19,3 +23,5 @@ OMCApplet
 *.ipa
 *.dSYM.zip
 *.dSYM
+Xattr.app/Contents/MacOS
+Xattr.app/Contents/_CodeSignature

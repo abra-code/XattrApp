@@ -146,11 +146,6 @@
 			<string>act_file_or_folder</string>
 			<key>NEXT_COMMAND_ID</key>
 			<string>clear.quarantine</string>
-			<key>ENVIRONMENT_VARIABLES</key>
-			<dict>
-				<key>OMC_OBJ_PATH</key>
-				<string></string>
-			</dict>
 		</dict>
 		<dict>
 			<key>NAME</key>
