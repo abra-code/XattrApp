@@ -1,7 +1,7 @@
 #!/bin/sh
 
-echo "[$(/usr/bin/basename "$0")]"
-echo "OMC_CURRENT_COMMAND_GUID: ${OMC_CURRENT_COMMAND_GUID}"
+# echo "[$(/usr/bin/basename "$0")]"
+# echo "OMC_CURRENT_COMMAND_GUID: ${OMC_CURRENT_COMMAND_GUID}"
 
 next_command="$OMC_OMC_SUPPORT_PATH/omc_next_command"
 if [ -n "$OMC_OBJ_PATH" ]; then

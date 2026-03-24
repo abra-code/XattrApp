@@ -1,6 +1,6 @@
 #!/bin/sh
 
-echo "[$(/usr/bin/basename "$0")]"
+# echo "[$(/usr/bin/basename "$0")]"
 
 # this handler is called when the Open menu item is selected
 if [ -n "$OMC_DLG_CHOOSE_OBJECT_PATH" ]; then

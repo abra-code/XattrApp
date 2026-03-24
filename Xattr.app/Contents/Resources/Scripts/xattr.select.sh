@@ -1,3 +1,3 @@
 #!/bin/sh
 
-echo "[$(/usr/bin/basename "$0")]"
+# echo "[$(/usr/bin/basename "$0")]"

@@ -1,6 +1,6 @@
 #!/bin/sh
 
-echo "[$(/usr/bin/basename "$0")]"
+# echo "[$(/usr/bin/basename "$0")]"
 
 # this is a modal dialog and this script executes only after user okeyed the dialog
 source "$OMC_APP_BUNDLE_PATH/Contents/Resources/Scripts/xattr.library.sh"

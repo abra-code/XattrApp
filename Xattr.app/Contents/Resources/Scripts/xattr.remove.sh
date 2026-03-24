@@ -2,7 +2,7 @@
 
 source "$OMC_APP_BUNDLE_PATH/Contents/Resources/Scripts/xattr.library.sh"
 
-echo "[$(/usr/bin/basename "$0")]"
+# echo "[$(/usr/bin/basename "$0")]"
 
 xattr_object_path="$OMC_NIB_DIALOG_CONTROL_5_VALUE"
 # echo "file path:\t${xattr_object_path}"
