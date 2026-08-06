@@ -13,6 +13,7 @@ load_attribute_table()
 	
 	local all_attribute_names=$(/usr/bin/xattr "${xattr_object_path}")
 	
+	local attribute_name
 	while read -r attribute_name; do
 # 		echo "${attribute_name}"
 		local printable_attribute_data=$(/usr/bin/xattr -p "${attribute_name}" "${xattr_object_path}" | /usr/bin/tr "\n" " " | /usr/bin/tr -c '[:print:]' '.')
